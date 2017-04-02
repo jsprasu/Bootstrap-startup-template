@@ -1,0 +1,14 @@
+###eight25.dev###
+<VirtualHost *:80>
+   ServerAdmin admin@eight25.dev
+   DocumentRoot "g:\development\projects\eight25.dev\public"
+   ServerName eight25.dev
+   ErrorLog "logs/eight25-.dev-error.log"
+	CustomLog "logs/eight25.dev-access.log" common
+   <Directory "g:\development\projects\eight25.dev">
+	   Order allow,deny
+	Allow from all
+	Require all granted
+		AllowOverride All
+   </Directory>
+</VirtualHost>
